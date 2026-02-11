@@ -1,0 +1,38 @@
+# Configuration (contains API keys)
+.env
+
+# Output directories (generated content)
+downloads/
+output/
+html/
+cloud_output/
+voice_profiles/
+
+# Media files
+*.mp4
+*.mp3
+*.wav
+
+# Logs and cookies
+*.log
+transcription_log.txt
+cookies.txt
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Models and data
+*.pkl
+*.pt
+models/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
