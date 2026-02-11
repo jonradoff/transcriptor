@@ -371,6 +371,37 @@ Instead of HTML, I want the transcripts as:
 Generate SRT subtitle files from these transcripts that I can upload back to YouTube.
 ```
 
+## Publishing to a CMS with LightCMS
+
+Once you have your HTML transcripts generated, you can easily import them into a website using [LightCMS](https://github.com/jonradoff/lightcms), an AI-native content management system designed for agentic workflows.
+
+LightCMS provides a Model Context Protocol (MCP) server with 38+ tools for managing your entire website through Claude Code or other AI assistants. Instead of manually uploading files through an admin interface, you can simply describe what you want and let the AI handle the import.
+
+### Example: Bulk Import Transcripts
+
+With the LightCMS MCP server connected to Claude Code, use this prompt to import all your transcripts:
+
+```
+On my website I want you to import all of the files from /Users/yourname/transcriptor/html
+into the "videos" folder with one content page per html file. Preserve the original filename
+as the slug. We will use the Standard Page template, where the ingested file comprises the
+content field. Make the title of each page match the title of the video mentioned inside
+each page.
+
+IMPORTANT: it's OK to inspect these files using an LLM for things like the description.
+But do NOT parse the content through an LLM to generate the page; we need to preserve the
+exact original content of each html page into the content field of each content item in
+the content management system.
+```
+
+Claude will then:
+1. Read each HTML file from your `html/` directory
+2. Extract the video title from the page content
+3. Create a content page in LightCMS with the correct slug
+4. Preserve the exact HTML content in the content field
+
+This agentic approach makes the "last mile" of publishing incredibly simple—no manual copying, no form filling, just describe what you want and it happens.
+
 ## Credits
 
 Built by Jon Radoff with assistance from Claude (Anthropic).
