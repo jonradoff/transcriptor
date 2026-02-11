@@ -255,7 +255,7 @@ pip install torch==2.10.0 torchaudio==2.10.0 pyannote.audio==4.0.4
 
 ## License
 
-MIT License - Copyright (c) 2025 Metavert LLC
+MIT License - Copyright (c) 2026 Metavert LLC
 
 See [LICENSE](LICENSE) for full details.
 
@@ -410,4 +410,4 @@ This agentic approach makes the "last mile" of publishing incredibly simple—no
 
 ## Credits
 
-Copyright (c) 2025 Metavert LLC. Prompted by Jon Radoff with assistance from Claude (Anthropic).
+Copyright (c) 2026 Metavert LLC. Prompted by Jon Radoff with assistance from Claude (Anthropic).
