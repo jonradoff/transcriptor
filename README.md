@@ -255,7 +255,13 @@ pip install torch==2.10.0 torchaudio==2.10.0 pyannote.audio==4.0.4
 
 ## License
 
-This pipeline uses:
+MIT License - Copyright (c) 2025 Metavert LLC
+
+See [LICENSE](LICENSE) for full details.
+
+### Dependencies
+
+This pipeline uses the following open source libraries:
 - [OpenAI Whisper](https://github.com/openai/whisper) - MIT License
 - [pyannote.audio](https://github.com/pyannote/pyannote-audio) - MIT License
 - [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) - Apache 2.0
@@ -404,4 +410,4 @@ This agentic approach makes the "last mile" of publishing incredibly simple—no
 
 ## Credits
 
-Built by Jon Radoff with assistance from Claude (Anthropic).
+Copyright (c) 2025 Metavert LLC. Prompted by Jon Radoff with assistance from Claude (Anthropic).
